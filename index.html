@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">Apex Legends</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero" class="smoothScroll intro">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">About</a></li>
+                    <li><a href="#legends" class="smoothScroll">Legends</a></li>
+                    <li><a href="#news" class="smoothScroll">News</a></li>
+                    <li><a href="#register" class="smoothScroll">Register</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h4>Conjure your inner strangth</h4>
+                <h1>Play for free</h1>
+                <a href="#" class="btn learn-more">learn more</a>
+                <a href="#" class="btn register-now">Register now</a>
+            </div>
+        </section>
+
+        <section id="about">        
+            <div class="about-content">
+                 <h3>Fight through the fierce competition to become the champion!
+                    Many strong opponents are waiting for you!</h3>
+                     <p>The rules are simple: Defeat the enemy and survive. Use the skills of each legend to fight!</p>
+                     <p>For PlayStation4, PlayStation5,Xbox One, Xbox Series X/S, Nintendo Switch, and PC via EA App and Steam</p>
+             </div>
+                             
+             <div class="image">
+                 <img src="C:\Users\12369\Desktop\img\img7.jpg" class="img-responsive" alt="about">
+             </div>
+         </section>
+
+         <section id="legends">
+            <div class="legends-content">
+                <h2>Meet the legends</h2>
+                <p>It takes grit, talent, and a lot of luck to become a legend. Pick your favorite and see what their unique set of skills can do for your squad.</p>
+            </div>
+            <div class="legends-container">
+                <div class="box">
+                    <img src="C:\Users\12369\Desktop\img\wraith2.png" alt="">
+                    <h5>Wraith</h5>
+                    <h6>Interdimensional Skirmisher</h6>
+                </div>
+                <div class="box">
+                    <img src="C:\Users\12369\Desktop\img\gibby2.png" alt="">
+                    <h5>Giblartar</h5>
+                    <h6>Shielded Fortress</h6>
+                </div>
+                <div class="box">
+                    <img src="C:\Users\12369\Desktop\img\blood2.png" alt="">
+                    <h5>Bloodhound</h5>
+                    <h6>Technological Tracker</h6>
+                </div>
+                <div class="box">
+                    <img src="C:\Users\12369\Desktop\img\lifeline2.png" alt="">
+                    <h5>Lifeline</h5>
+                    <h6>Combat Medic</h6>
+                </div>
+               
+            </div>
+        </section>
+
+        <section id="news">
+            <img src="C:\Users\12369\Desktop\img\img9.jpg" alt="">
+            <div class="news-content">
+                <h2 class="stag">News</h2>
+                <p class="stag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente numquam nemo distinctio obcaecati! Unde cupiditate quas libero? Minima facere dicta inventore veritatis provident sed corporis nobis commodi assumenda sint.</p>
+             
+            </div>
+            
+        </section>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+
+    <script>
+
+        gsap.from(".about-content",{
+            scrollTrigger: ".about-content",
+            x:-200,
+            duration:1.5,
+            opacity:0,
+            scrub:1
+        });
+
+        gsap.from(".image",{
+            scrollTrigger: ".image",
+            x:200,
+            duration:1.5,
+            opacity:0,
+            scrub:1
+        });
+
+        gsap.from(".legends-content",{
+            scrollTrigger: ".legends-content",
+            y:200,
+            duration:1.5,
+            opacity:0,
+            scrub:1
+        });
+
+        gsap.from(".box",{
+            scrollTrigger: ".box",
+            y:200,
+            duration:1.5,
+            opacity:0,
+            delay:0.5,
+            stagger:0.1,
+            scrub:1
+        });
+
+        gsap.from(".stag",{
+            scrollTrigger: ".stag",
+            y:200,
+            duration:1.5,
+            opacity:0,
+            delay:0.5,
+            stagger:0.2,
+            scrub:1
+        });
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
